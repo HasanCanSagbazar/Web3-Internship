@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "Calculator_backend": {
+      "main": "src/Calculator_backend/main.mo",
+      "type": "motoko"
+    },
+    "Calculator_frontend": {
+      "dependencies": [
+        "Calculator_backend"
+      ],
+      "source": [
+        "src/Calculator_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "Calculator_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
